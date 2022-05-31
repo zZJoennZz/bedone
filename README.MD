@@ -1,0 +1,1 @@
+Very simple weather card using weatherapi.com API
