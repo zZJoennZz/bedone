@@ -1,0 +1,113 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif !important;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.weather-card {
+    margin: auto;
+    margin-top: 1rem;
+    width: 500px;
+    background: rgb(44, 129, 179);
+    border-radius: 0.5rem;
+}
+
+.weather-card-inner {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.weather-icon {
+    margin-right: 0.5rem;
+    animation-name: weatherIcon;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.weather-current {
+    color: rgb(164, 222, 255);
+}
+
+.weather-current-text {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.weather-localtime {
+    float: right;
+    font-size: 0.8rem;
+    color: rgb(164, 222, 255);
+}
+
+.weather-temp {
+    color: #fff;
+    font-style: italic;
+}
+
+@keyframes weatherIcon {
+    0% {opacity: 1; transform: rotate(0deg);}
+    10% {opacity: 0.9; transform: rotate(1.1deg);}
+    20% {opacity: 0.8; transform: rotate(1.2deg);}
+    30% {opacity: 0.7; transform: rotate(1.3deg);}
+    40% {opacity: 0.6; transform: rotate(1.4deg);}
+    50% {opacity: 0.5; transform: rotate(1.5deg);}
+    60% {opacity: 0.6; transform: rotate(1.4deg);}
+    70% {opacity: 0.7; transform: rotate(1.3deg);}
+    80% {opacity: 0.8; transform: rotate(1.2deg);}
+    90% {opacity: 0.9; transform: rotate(1.1deg);}
+    100% {opacity: 1; transform: rotate(0deg);}
+}
